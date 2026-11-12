@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikat Das | AI & Embedded Systems Engineer</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --text: #334155;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5rem; color: var(--primary); }
+        .tagline { color: var(--accent); font-size: 1.2rem; font-weight: 500; margin-top: 0.5rem; }
+        
+        /* Sections */
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        .contact-info a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover { color: var(--accent); }
+
+        /* Projects */
+        .project { 
+            margin-bottom: 1.5rem; 
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+        .project-title { font-weight: bold; font-size: 1.1rem; color: var(--primary); }
+        .project-meta { color: #64748b; font-size: 0.9rem; margin-bottom: 0.5rem; font-style: italic;}
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .skill-category h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+            color: var(--accent);
+        }
+        .skill-category ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        /* Education */
+        .edu-item { margin-bottom: 1rem; }
+        .edu-degree { font-weight: bold; color: var(--primary); }
+        .edu-meta { color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HERO -->
+        <header class="hero">
+            <!-- Make sure you have an image named 'profile.jpg' in the same folder, or replace with an online URL -->
+            <img src="profile.jpeg" alt="Saikat Das" class="profile-pic" onerror="this.src='https://via.placeholder.com/160'">
+            <h1>Saikat Das</h1>
+            <p class="tagline">Electronics & Communication Engineer | AI & Embedded Systems</p>
+            
+            <div class="contact-info">
+                <a href="mailto:saikat4573@gmail.com">✉️ saikat4573@gmail.com</a>
+                <a href="tel:+917980479916">📞 +91-7980479916</a>
+                <a href="https://linkedin.com/in/saikat-das-486581399" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>An aspiring Electronics and Communication Engineer with a strong focus on Deep Learning and Embedded Systems. I specialize in developing AI-powered assistive technologies and Biomedical Signal Processing systems. With a consistent academic record and a proven ability to deploy Computer Vision models on edge hardware, I am passionate about bridging the gap between complex neural architectures and constrained embedded environments.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">AI-Enabled Blind Assistive Navigation System</div>
+                <div class="project-meta">Software & Hardware Integration | Mentor: Dr. Ashis Kumar Dhara (NIT Durgapur)</div>
+                <ul>
+                    <li>Developed a complete AI-powered assistive device optimized for the Indian ecosystem using custom datasets for Object Detection.</li>
+                    <li>Trained and optimized a Computer Vision model achieving <strong>92.5% accuracy</strong>, successfully deployed on embedded hardware for real-time Edge Computing.</li>
+                    <li>Presented at the <strong>AICTE IIC Regional Meet 2025</strong>, receiving industrial recognition for hardware-software integration.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title">IoT-Based Fall Detection and Criticality Monitoring System</div>
+                <div class="project-meta">Hardware & AI Prototyping | Mentor: Dr. Ashis Kumar Dhara (NIT Durgapur)</div>
+                <ul>
+                    <li>Built a real-time monitoring system for elderly safety using a 10-DOF MPU Sensor and pulse monitoring modules.</li>
+                    <li>Implemented Sensor Fusion and calibration techniques to handle raw IMU data for precise activity recognition.</li>
+                    <li>Applied XGBoost and Regression Analysis to classify fall events and monitor vital signs for immediate criticality alerts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python, C, C++</li>
+                        <li>Embedded C, MicroPython</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Data Science</h3>
+                    <ul>
+                        <li>PyTorch, TensorFlow</li>
+                        <li>OpenCV, Scikit-learn</li>
+                        <li>XGBoost, NumPy, Pandas</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Hardware & Tools</h3>
+                    <ul>
+                        <li>Ki-CAD (PCB Design)</li>
+                        <li>Arduino IDE, Thonny</li>
+                        <li>Git, VS Code</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li>DSA & OOP</li>
+                        <li>Signal Processing</li>
+                        <li>Digital Electronics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEARCH INTERESTS -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li><strong>Neural Architectures:</strong> Deep Neural Networks and Transformer Architecture analysis for sequence and image modeling.</li>
+                <li><strong>Biomedical Signal Processing:</strong> Analyzing physiological signals for diagnostic health monitoring and assistive technology.</li>
+                <li><strong>System Design:</strong> System Architecture design from scratch, emphasizing the intersection of AI and Embedded Systems.</li>
+                <li><strong>Optimization:</strong> Data Augmentation techniques and specialized Neural Network design for constrained hardware environments.</li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="edu-item">
+                <div class="edu-degree">Bachelors’ of Engineering in Electronics and Communication Engineering</div>
+                <div class="edu-meta">University Institute of Technology, The University of Burdwan | Sept 2024 – Aug 2028</div>
+                <p><em>SGPA: 9.39 (1st Sem) | 9.23 (2nd Sem) | 9.00 (3rd Sem)</em></p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-degree">Higher Secondary Education (WBCHSE)</div>
+                <div class="edu-meta">Uttarpara Amarendra Vidyapith | 2021 - 2023</div>
+                <p><em>Class XII Score: 61%</em></p>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-degree">Secondary Education (WBBSE)</div>
+                <div class="edu-meta">Uttarpara Amarendra Vidyapith | 2015 - 2021</div>
+                <p><em>Class X Score: 92%</em></p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
